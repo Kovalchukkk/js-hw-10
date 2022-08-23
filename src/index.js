@@ -54,7 +54,21 @@ function renderCountryCard(countries) {
 <p class="counry__specs">Languages: <span class="country__info">${getLanguages(
     countries[0].languages
   )}</span></p>`;
+
   refs.countryInfo.innerHTML = markup;
+}
+
+function renderCountryList(countries) {
+  const markup = countries
+    .map(
+      ({ flags, name }) => `<li class="country-list__item">
+    <img src="${flags.svg}" alt="" width="30px">
+    <p class="country-list__name">${name}</p>
+</li>`
+    )
+    .join('');
+
+  refs.countryList.innerHTML = markup;
 }
 
 function getLanguages(languages) {
