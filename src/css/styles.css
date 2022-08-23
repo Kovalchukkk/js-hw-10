@@ -18,3 +18,37 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+input:focus-visible {
+  outline: 1px solid rgb(52, 122, 235);
+}
+
+.country-list {
+  list-style: none;
+  padding: 0;
+}
+
+.country-list__name {
+  display: inline;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* <div class="country-info"></div> */
+.country__name {
+  display: inline;
+}
+
+.counry__specs {
+  font-weight: 700;
+}
+
+.country__info {
+  font-weight: 400;
+}
